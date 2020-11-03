@@ -1,22 +1,17 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to here</h1>
-  </div>
+<template lang="pug">
+    div#app
+        img(src='./assets/logo.png')
+        h1 Welcome from pug & sass
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +19,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 200px;
+    h1{
+        color: #42b983;
+    }
 }
 </style>
